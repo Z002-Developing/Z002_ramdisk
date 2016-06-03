@@ -18,8 +18,10 @@ service akmd_a600cg /system/bin/a600cg_akmd09911 -m 2
     group system misc input
     oneshot
 
+# for ZenFone 6 A600CG
 on property:ro.product.device=ASUS_T00G
     start akmd_a600cg
 
+# for ZenFone 6 A601CG
 on property:ro.product.device=ASUS_Z002
     start akmd_a600cg
